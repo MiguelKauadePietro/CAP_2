@@ -1,8 +1,6 @@
 
 def subsequencia_igual(valores1, valores2):
 
-    
-
     for indice1 in range(len(valores1) - len(valores2)):
         igual = False
         for indice2 in range(len(valores2)):
