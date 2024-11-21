@@ -1,0 +1,12 @@
+ User1:
+ Nome: Miguel Kauã de Pietro
+ Idade: 18
+ Profissão: Cientista de dados (Junior)
+ Emprego: Não
+ ---------
+ User2:
+ Nome: Felipe Eduardo de Pietro
+ Idade: 29
+ Profissão: Desenvolvedor PHP (Senior)
+ Emprego: Sim
+ ---------
