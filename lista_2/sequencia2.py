@@ -1,13 +1,17 @@
 def sequencia(valores):
-    tam = len(valores)
+    seq = [1, 2]
+
+    tam1 = len(seq)
+
+    tam2 = len(valores)
 
     cont = 0
 
-    seq = [1, 2]
 
-    for i in range(0, tam, 2):
-        if valores[i] == seq:
+    for i in range(tam2 - tam1):
+        if valores[i:i+tam1] == seq:
             cont += 1
+
     return cont
 
 
