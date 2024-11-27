@@ -10,7 +10,7 @@ def compara_lista_e_matriz(mat, list):
             if mat[i][j] == list[i * nc + j]:
                 return True
 
-    return False
+            return False
 
 
 def testes():
