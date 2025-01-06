@@ -15,6 +15,8 @@ int main(void)
     {
         printf("1\n");
     }else{
+        printf("%d\n", f[0]);
+        printf("%d\n", f[1]);
         for (i = 2; i < n; i++)
         {
             f[i] = f[i-1] + f[i-2];
