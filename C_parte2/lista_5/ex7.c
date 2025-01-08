@@ -31,9 +31,6 @@ int main(void)
     }else{
         printf("Nao eh simetrica\n");
     }
-    
-    
-    
 
     return 0;
 }
