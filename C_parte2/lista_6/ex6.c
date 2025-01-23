@@ -19,7 +19,7 @@ int maior_palavra(char str1[N]){
 
            tamanhos[espaco] = cont;
 
-	   espaco++;
+	        espaco++;
 
            cont  = 0;
         }else{
