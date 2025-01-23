@@ -17,20 +17,30 @@ void substitui_palavra(char texto[], char busca[], char subs[], char res[]){
 	}
 
 	printf("%d\n", i);
-
+	
+	//miguel come chocolate
+	//miguel
+	//ama
+	//
 
 	for(i_apos = 0; i_apos < strlen(subs); i_apos++){
 		res[indice + i_apos] = subs[i_apos];
+		printf("%c\n", subs[i_apos]);
 	}
 
 	printf("%d\n", i_apos);
 
-	printf("%s\n", res);
+	//printf("%s\n", res);
 
-	while(i+i_apos > indice && texto[i] != '\0'){
-		res[i+i_apos] = texto[i+i_apos];
-		i_apos++;
+	//while(i+i_apos > indice && texto[i] != '\0'){
+		//res[i+i_apos] = texto[i+i_apos];
+		//i_apos++;
 		//printf("%c\n", res[i]);
+	//}
+	
+	for(int j = indice; j < indice + strlen(subs); j++){
+		res[j] = texto[j];
+		printf("%c ", res[j]);
 	}
 
 	res[i] = '\0';
@@ -42,7 +52,7 @@ int main(void){
 
 	substitui_palavra(text, busca, subs, res);
 
-	printf("%s\n", res);
+	//printf("%s\n", res);
 	
 	return 0;
 }

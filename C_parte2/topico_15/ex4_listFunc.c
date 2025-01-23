@@ -4,11 +4,13 @@
 typedef struct{
 	int valores[N_MAX];
 	int n;
+	int n_max = N_MAX;
 } Lista;
 
 Lista list(void){
 	Lista lista;
 	lista.n = 0;
+	lista.n_max = N_MAX;
 	return lista;
 }
 
@@ -27,6 +29,10 @@ int sum(Lista list){
 }
 
 Lista pop(Lista list){
+	if(list.n <= 0){
+		printf("Não é possível remover o item desta lista, pois ela está vazia!\n");
+		return list;
+	}
 	list.valores[list.n--];
 
 	return list;
@@ -34,9 +40,15 @@ Lista pop(Lista list){
 
 Lista append(Lista lista, int valor){
 
+	if(lista.n == lista.n_max){
+		printf("Não é possível adicionar um item, pois chegou ao tamanho limite do registro\n");
+		return lista;
+	}
+
 	lista.valores[lista.n++] = valor;
 
 	return lista;
+
 }
 
 void print(Lista list){
@@ -71,5 +83,5 @@ int main(void){
 	print(L);
 
 	return 0;
-}	
+}
 
