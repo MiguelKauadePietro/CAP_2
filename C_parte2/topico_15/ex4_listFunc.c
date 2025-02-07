@@ -4,7 +4,7 @@
 typedef struct{
 	int valores[N_MAX];
 	int n;
-	int n_max = N_MAX;
+	int n_max;
 } Lista;
 
 Lista list(void){
@@ -78,7 +78,7 @@ int main(void){
 	L = pop(L);
 	L = pop(L);
 
-	printf("A lista possui %d valor(es)\n", len(L));	
+	printf("A lista possui %d valor(es)\n", len(L));
 	printf("%d\n", sum(L));
 	print(L);
 
