@@ -1,0 +1,4 @@
+C é uma linguagem compilada <inserir citação> que possui alta eficiência.
+<descrever a sintaxe>
+Exemplo de compilação de um programa em C
+<criar exemplo>

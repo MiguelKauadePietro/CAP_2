@@ -1,0 +1,3 @@
+C é uma linguagem compilada  que possui alta eficiência.
+
+Exemplo de compilação de um programa em C

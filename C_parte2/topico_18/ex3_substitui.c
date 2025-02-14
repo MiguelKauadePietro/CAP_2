@@ -15,6 +15,9 @@ void substitui(char *nome1, char *nome2){
         }
         fputc(c, arq2);
     }
+
+    fclose(arq1);
+    fclose(arq2);
 }
 
 int main(void)
@@ -23,5 +26,6 @@ int main(void)
     char arq2[20] = "ex3_valores2.txt";
 
     substitui(arq1, arq2);
+
     return 0;
 }
