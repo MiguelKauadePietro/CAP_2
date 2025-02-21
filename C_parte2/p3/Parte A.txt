@@ -1,0 +1,35 @@
+Problema 1:
+
+Os tipos do registro Celular serão dois do tipo string(nome do modelo e marca) terão seus tamanhos definidos a partir de um macro chamado TAM_MAX com 100 de tamanho, um do tipo inteiro(ano de fabricação) e um do tipo float(preço).
+
+Agora os tipos da função, parâmetros e valor de retorno serão:
+
+O tipo da função será do tipo struct Celular;
+
+O único parâmetro será um struct Celular cell que vai receber os valores;
+
+E o que será retornado será struct Cell com as informações inseridas;
+
+Problema 2:
+
+Os parâmetros da função busca_aluno possuem os tipos Struct *Aluno(vetor), um inteiro n para identificar a quantidade alunos do vetor e um ponteiro para char do nome do aluno requisitado
+
+O valor de retorno será um ponteiro que aponta para um Struct Aluno(as informações do aluno requisitado)
+
+Para o algoritmo da função busca_aluno será necessário antes de tudo declarar um ponteiro que aponta para uma Struct Aluno(*p_aluno_busca) e logo após um laço de repetição for que int i=0 até n(parâmetro da função) e dentro do laço de repetição iterar sobre esse vetor de alunos e verificar utilizando a função strcmp e armazenando em uma variável inteira val_comp para verificar se nome e char *nome são iguais logo a baixo um if sobre se o valor armazenado em val_comp é maior ou igual à zero, caso seja, o ponteiro p_aluno_busca armazena as informações nome, RA e idade e é retornado o ponteiro, agora se nunca for maior ou igual a zero e acabar o loop, a função retornará NULL;
+
+Problema 3:
+
+Na função struct Classe *cria(int quantidade) ela alocará dinamicamente um vetor de Classe ou seja a quantidade multiplicada por 112 bytes(tamanho da Struct Classe supondo que o nome do aluno na struct Aluno tenha 100 bytes de tamanho) e também aloca dinamicamente o ponteiro p_aluno ou seja quantidade multiplicada por 108 bytes(supondo que o nome do aluno na struct Aluno tenha 100 bytes de tamanho)
+e por fim, retorna o ponteiro p_classe alocado;
+
+Na função int cria_err(int quantidade, struct Classe *p_classe) ela tambéme aloca o ponteiro p_aluno como na função Struct Classe *cria só que ela tem que receber o ponteiro p_classe já com a memória alocada e após alocar memória para p_aluno é verificado esse ponteiro onde ocorreu a alocação, onde se o ponteiro for igual a NULL, a função retorna 1, pois não foi possível alocar e caso o contrário retorna 0;
+
+Problema 4:
+
+As bibliotecas utilizadas serão:
+
+-> fopen para abrir os arquivos;
+-> fgets para ler as linhas do arquivo texto;
+-> fgetc para ler os caracteres da linha mais longa do arquivo texto;
+-> fwrite para escrever os dados no arquivo binário;
