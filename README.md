@@ -48,3 +48,12 @@ Os códigos presentes neste repositório cobrem conceitos como:
 ### Python
 ```bash
 python arquivo.py
+
+```
+
+### C
+```bash
+gcc arquivo.c -o programa
+./programa
+```
+
