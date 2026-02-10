@@ -41,7 +41,7 @@ Os códigos presentes neste repositório cobrem conceitos como:
 - Structs
 - Vetores e matrizes
 - Alocação dinâmica de memória
-- Manipulação básica de arquivos
+- Manipulação básica de arquivos(arquivos texto e binários)
 
 ## Como executar os códigos
 
